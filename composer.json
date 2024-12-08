@@ -12,12 +12,6 @@
         }
     ],
     "minimum-stability": "dev",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/Makav3li94/laravel-review.git"
-        }
-    ],
 
     "require": {
         "php" : "^7.4|^8.0|^8.1|^8.2|^8.3",
