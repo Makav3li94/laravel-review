@@ -1,12 +1,12 @@
 {
-    "name": "codebyray/laravel-review-rateable",
+    "name": "makav3li94/laravel-review-rateable",
     "description": "Review & Rating system for Laravel 7, 8, 9, 10 & 11",
     "keywords": ["rating", "Ratable", "laravel", "Review-Rateable", "reviewable"],
     "license": "MIT",
     "authors": [
         {
-            "name": "CodebyRay",
-            "email": "dev@codebyray.com"
+            "name": "Makav3li94",
+            "email": "dev@Makav3li94.com"
         }
     ],
     "minimum-stability": "dev",
@@ -27,18 +27,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Codebyray\\ReviewRateable\\": "src"
+            "Makav3li94\\ReviewRateable\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Codebyray\\ReviewRateable\\Test\\": "tests"
+            "Makav3li94\\ReviewRateable\\Test\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Codebyray\\ReviewRateable\\ReviewRateableServiceProvider"
+                "Makav3li94\\ReviewRateable\\ReviewRateableServiceProvider"
             ]
         }
     },
