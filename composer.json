@@ -28,7 +28,13 @@
             "Makav3li94\\ReviewRateable\\": "src"
         }
     },
-
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Makav3li94\\ReviewRateable\\ReviewRateableServiceProvider"
+            ]
+        }
+    },
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test:windows": "vendor\\bin\\phpunit"
