@@ -1,5 +1,5 @@
 {
-    "name": "makav3li94/laravel-review-rateable",
+    "name": "makav3li94/laravel-review",
     "version": "8",
     "description": "Review & Rating system for Laravel 7, 8, 9, 10 & 11",
     "keywords": ["rating", "Ratable", "laravel", "Review-Rateable", "reviewable"],
@@ -11,8 +11,13 @@
             "email": "dev@Makav3li94.com"
         }
     ],
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "http://github.com/sundarocs/laravel-review-rateable"
+        }
+    ],
 
     "require": {
         "php" : "^7.4|^8.0|^8.1|^8.2|^8.3",
@@ -35,8 +40,5 @@
             ]
         }
     },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test:windows": "vendor\\bin\\phpunit"
-    }
+
 }
