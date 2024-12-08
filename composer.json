@@ -9,7 +9,7 @@
             "email": "dev@Makav3li94.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "vcs",

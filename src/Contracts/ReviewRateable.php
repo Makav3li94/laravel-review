@@ -1,6 +1,6 @@
 <?php
 
-namespace Codebyray\ReviewRateable\Contracts;
+namespace Makav3li94\ReviewRateable\Contracts;
 
 use Illuminate\Database\Eloquent\Model;
 

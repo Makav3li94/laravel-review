@@ -1,6 +1,6 @@
 <?php
 
-namespace Codebyray\ReviewRateable\Models;
+namespace Makav3li94\ReviewRateable\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

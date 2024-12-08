@@ -1,6 +1,6 @@
 <?php
 
-namespace Codebyray\ReviewRateable;
+namespace Makav3li94\ReviewRateable;
 
 use Illuminate\Support\ServiceProvider;
 
