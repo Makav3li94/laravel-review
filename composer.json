@@ -27,18 +27,7 @@
             "Makav3li94\\ReviewRateable\\": "src"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Makav3li94\\ReviewRateable\\Test\\": "tests"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Makav3li94\\ReviewRateable\\ReviewRateableServiceProvider"
-            ]
-        }
-    },
+
     "scripts": {
         "test": "vendor/bin/phpunit",
         "test:windows": "vendor\\bin\\phpunit"
