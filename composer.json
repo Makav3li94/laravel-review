@@ -13,7 +13,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "http://github.com/sundarocs/laravel-review-rateable"
+            "url": "http://github.com/Makav3li94/laravel-review-rateable"
         }
     ],
     "require": {
