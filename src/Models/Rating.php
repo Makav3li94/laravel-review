@@ -188,7 +188,6 @@ class Rating extends Model
         // ddd($ratings);
         return $ratings;
     }
-
     /**
      * @param $id
      *
