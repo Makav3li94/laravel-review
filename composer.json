@@ -1,5 +1,6 @@
 {
     "name": "makav3li94/laravel-review-rateable",
+    "version": "8",
     "description": "Review & Rating system for Laravel 7, 8, 9, 10 & 11",
     "keywords": ["rating", "Ratable", "laravel", "Review-Rateable", "reviewable"],
     "type": "library",
