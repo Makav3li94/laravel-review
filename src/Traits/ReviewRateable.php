@@ -56,9 +56,9 @@ trait ReviewRateable
         $avgExpression = null;
 
         if ($round) {
-            $avgExpression = 'ROUND(AVG(communication_rating), ' . $round . ') as averageCommunicationRating';
+            $avgExpression = 'ROUND(AVG(communication_rating), ' . $round . ') as averageCommunicationReviewRateable';
         } else {
-            $avgExpression = 'AVG(communication_rating) as averageCommunicationRating';
+            $avgExpression = 'AVG(communication_rating) as averageCommunicationReviewRateable';
         }
 
         return $this->ratings()
@@ -66,7 +66,7 @@ trait ReviewRateable
             ->where($where)
             ->get()
             ->first()
-            ->averageCommunicationRatingRateable;
+            ->averageCommunicationReviewRateable;
     }
 
     /**
@@ -137,9 +137,9 @@ trait ReviewRateable
         $avgExpression = null;
 
         if ($round) {
-            $avgExpression = 'ROUND(AVG(cost_rating), ' . $round . ') as averageCostRating';
+            $avgExpression = 'ROUND(AVG(cost_rating), ' . $round . ') as averageCostReviewRateable';
         } else {
-            $avgExpression = 'AVG(cost_rating) as averageCostRating';
+            $avgExpression = 'AVG(cost_rating) as averageCostReviewRateable';
         }
 
         return $this->ratings()
@@ -147,7 +147,7 @@ trait ReviewRateable
             ->where($where)
             ->get()
             ->first()
-            ->averageCostRatingRateable;
+            ->averageCostReviewRateable;
     }
 
     /**
@@ -164,9 +164,9 @@ trait ReviewRateable
         $avgExpression = null;
 
         if ($round) {
-            $avgExpression = 'ROUND(AVG(time_management_rating), ' . $round . ') as averageTimeManagementRating';
+            $avgExpression = 'ROUND(AVG(time_management_rating), ' . $round . ') as averageTimeManagementReviewRateable';
         } else {
-            $avgExpression = 'AVG(time_management_rating) as averageTimeManagementRating';
+            $avgExpression = 'AVG(time_management_rating) as averageTimeManagementReviewRateable';
         }
 
         return $this->ratings()
@@ -174,7 +174,7 @@ trait ReviewRateable
             ->where($where)
             ->get()
             ->first()
-            ->averageTimeManagementRatingRateable;
+            ->averageTimeManagementReviewRateable;
     }
     /**
      *
@@ -190,9 +190,9 @@ trait ReviewRateable
         $avgExpression = null;
 
         if ($round) {
-            $avgExpression = 'ROUND(AVG(language_proficiency_rating), ' . $round . ') as averageLanguageProficiencyRating';
+            $avgExpression = 'ROUND(AVG(language_proficiency_rating), ' . $round . ') as averageLanguageProficiencyReviewRateable';
         } else {
-            $avgExpression = 'AVG(language_proficiency_rating) as averageLanguageProficiencyRating';
+            $avgExpression = 'AVG(language_proficiency_rating) as averageLanguageProficiencyReviewRateable';
         }
 
         return $this->ratings()
@@ -200,7 +200,7 @@ trait ReviewRateable
             ->where($where)
             ->get()
             ->first()
-            ->averageLanguageProficiencyRatingRateable;
+            ->averageLanguageProficiencyReviewRateable;
     }
     /**
      * @var $onlyApproved
@@ -229,11 +229,11 @@ trait ReviewRateable
         $where = $onlyApproved ? [['approved', '1']] : [];
 
         return $this->ratings()
-            ->selectRaw('count(communication_rating) as countCommunicationRating')
+            ->selectRaw('count(communication_rating) as countCommunicationReviewRateable')
             ->where($where)
             ->get()
             ->first()
-            ->countCommunicationRatingRateable;
+            ->countCommunicationReviewRateable;
     }
 
     /**
@@ -258,7 +258,7 @@ trait ReviewRateable
      *
      * @return int
      */
-    public function countFriendlyRating($onlyApproved = false) 
+    public function countFriendlyRating($onlyApproved = false)
     {
         $where = $onlyApproved ? [['approved', '1']] : [];
 
